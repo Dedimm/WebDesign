@@ -2,82 +2,157 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        aside.right {
+            width: 15%;
+            float: right;
+            background-color: purple;
+            padding: 10px;
+            border-left: 3px solid #ccc;
+        }
+        aside.left {
+            width: 15%;
+            float: left;
+            background-color: purple;
+            padding: 10px;
+            border-right: 3px solid #ccc;
+        }
+        nav{
+            box-sizing: border-box;
+            background-color: pink;
+            vertical-align: baseline;
+        }
+        footer{
+            font-size: 20px;
+            border: 2px solid black;
+            background-color: orange;
+        }
+        header {
+            font-family: "Open Sans", sans-serif;
+            border: 2px solid orange;
+            background-color: black;
+            color: white;
+            font-size: 35px;
+        }
+
+        main {
+            border: 2px solid black;
+            font-family: "Open Sans", sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        body {
+            font: inherit;
+            box-sizing: border-box;
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+    </style>
     <title>TAREFA</title>
 </head>
 
 <body>
-    <form action="https://www.w3schools.com/action_page.php">
-        <input type="date"><br>
+    <header>
+        Questionario WebDesign
+    </header>
+    <nav>
+        video do youtube:
+        <iframe width="400" height="245" src="https://www.youtube.com/embed/FH2P1PU6teM?si=7cy_Fo_1SAXmhWtJ"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </nav>
+    <aside class="right">
+        aside
+    </aside>
+    <aside class="left">
+        aside
+    </aside>
+    <main>
+        <form action="https://www.w3schools.com/action_page.php">
+            <input type="date"><br>
 
-        <fieldset>
-            <legend>Dados de Acesso</legend>
-            <label for="usuario">Usuario</label> <br>
-            <input type="text" id="usuario" name="usuario"> <br>
-            <label for="senha">Senha</label> <br>
-            <input type="password" id="" senha" name="senha">
-        </fieldset>
-        <fieldset>
-            <legend>Dados Pessoais</legend>
-            <label for="nome">Nome</label> <br>
-            <input type="text" name="nome" id="nome"> <br>
-            <label for="endereco">Endereço</label> <br>
-            <input type="text" name="endereco" id="endereco"> <br>
-            <label for="numero">Numero</label> <br>
-            <input type="number" name="numero" id="numero"> <br>
-            <label for="complemento">Complemento</label> <br>
-            <input type="text" name="complemento" id="complemento">
+            <fieldset>
+                <legend>Dados de Acesso</legend>
+                <label for="usuario">Usuario</label> <br>
+                <input type="text" id="usuario" name="usuario"> <br>
+                <label for="senha">Senha</label> <br>
+                <input type="password" id="" senha" name="senha">
+            </fieldset>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="nome">Nome</label> <br>
+                <input type="text" name="nome" id="nome"> <br>
+                <label for="endereco">Endereço</label> <br>
+                <input type="text" name="endereco" id="endereco"> <br>
+                <label for="numero">Numero</label> <br>
+                <input type="number" name="numero" id="numero"> <br>
+                <label for="complemento">Complemento</label> <br>
+                <input type="text" name="complemento" id="complemento">
+                <p></p>
+                <input list="Cidade" name="Cidade"> <br>
+                <label for="Cidade">Cidade</label>
+                <datalist id="Cidade">
+                    <option value="Tatui">
+                    <option value="Tiete">
+                    <option value="Sorocaba">
+                    <option value="Cerquilho">
+                    <option value="Piracicaba">
+                </datalist>
+                <p></p>
+                <label for="estado">Escolha seu estado:</label> <br>
+                <select id="estado" name="estado">
+                    <option value="volvo">São Paulo</option>
+                    <option value="saab">Minas Gerais</option>
+                    <option value="fiat">Paraná</option>
+                    <option value="audi">Bahia</option>
+                </select>
+                <p></p>
+                <label for="cep">Cep</label> <br>
+                <input type="number" name="cep" id="cep">
+            </fieldset>
             <p></p>
-            <input list="Cidade" name="Cidade"> <br>
-            <label for="Cidade">Cidade</label>
-            <datalist id="Cidade">
-                <option value="Tatui">
-                <option value="Tiete">
-                <option value="Sorocaba">
-                <option value="Cerquilho">
-                <option value="Piracicaba">
-            </datalist>
+            Genêro: <br>
+            <input type="radio" id="masc" name="genero" value="masculino">
+            <label for="masc">Masculino</label><br>
+            <input type="radio" id="fem" name="genero" value="feminino">
+            <label for="fem">Feminino</label><br>
+            <input type="radio" id="naoopinar" name="genero" value="não opinar">
+            <label for="naoopinar">Prefiro não falar</label>
             <p></p>
-            <label for="estado">Escolha seu estado:</label> <br>
-            <select id="estado" name="estado">
-                <option value="volvo">São Paulo</option>
-                <option value="saab">Minas Gerais</option>
-                <option value="fiat">Paraná</option>
-                <option value="audi">Bahia</option>
-            </select>
+            Curso: <br>
+            <input type="checkbox" id="curso1" name="curso1" value="ADS">
+            <label for="curso1">ADS</label><br>
+            <input type="checkbox" id="curso2" name="curso2" value="Jogos">
+            <label for="curso2">Jogos</label><br>
+            <input type="checkbox" id="curso3" name="curso3" value="Gestao de TI">
+            <label for="curso3">Gestão de TI</label> <br>
+            <input type="checkbox" name="curso4" id="curso4" value="Banco de Dados">
+            <label for="curso4">Banco de dados</label>
             <p></p>
-            <label for="cep">Cep</label> <br>
-            <input type="number" name="cep" id="cep">
-        </fieldset>
-        <p></p>
-        Genêro: <br>
-        <input type="radio" id="masc" name="genero" value="masculino">
-        <label for="masc">Masculino</label><br>
-        <input type="radio" id="fem" name="genero" value="feminino">
-        <label for="fem">Feminino</label><br>
-        <input type="radio" id="naoopinar" name="genero" value="não opinar">
-        <label for="naoopinar">Prefiro não falar</label>
-        <p></p>
-        Curso: <br>
-        <input type="checkbox" id="curso1" name="curso1" value="ADS">
-        <label for="curso1">ADS</label><br>
-        <input type="checkbox" id="curso2" name="curso2" value="Jogos">
-        <label for="curso2">Jogos</label><br>
-        <input type="checkbox" id="curso3" name="curso3" value="Gestao de TI"> 
-        <label for="curso3">Gestão de TI</label> <br>
-        <input type="checkbox" name="curso4" id="curso4" value="Banco de Dados">
-        <label for="curso4">Banco de dados</label>
-        <p></p>
-        Modelo do curso: <br>
-        <input type="radio" name="EAD" id="EAD">
-        <label for="EAD">EAD</label> <br>    
-        <input type="radio" name="presencial" id="presencial" value="presencial">
-        <label for="presencial">Presencial</label> <br>
-        <input type="radio" name="semi" id="semi">
-        <label for="semi">Semi presencial </label> <br>
-        <input type="submit" value="ENVIAR">
-    </form>
+            Modelo do curso: <br>
+            <input type="radio" name="EAD" id="EAD">
+            <label for="EAD">EAD</label> <br>
+            <input type="radio" name="presencial" id="presencial" value="presencial">
+            <label for="presencial">Presencial</label> <br>
+            <input type="radio" name="semi" id="semi">
+            <label for="semi">Semi presencial </label> <br>
+            <input type="submit" value="ENVIAR">
+        </form>
+    </main>
+    <footer>
+        Este foi minha aplicação de css
+    </footer>
 </body>
 
 </html>
