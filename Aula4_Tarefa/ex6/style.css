@@ -1,0 +1,10 @@
+img{
+    width: 120px;
+    height: 120px;
+}
+.circle{
+    border-radius: 50%;
+}
+.cat{
+    border: 5px solid greenyellow;
+}
