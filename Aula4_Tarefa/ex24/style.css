@@ -1,0 +1,16 @@
+img{
+    width: 120px;
+    height: 120px;
+}
+.circle{
+    border-radius: 50%;
+}
+.cat{
+    border: 5px solid greenyellow;
+}
+ .horse{
+    border: 5px solid red;
+ }
+ .camel{
+    border: 5px solid burlywood;
+ }
