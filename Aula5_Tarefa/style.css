@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    height: 97vh;
+}
+
+.left_side{
+    margin-top: 250px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    width: 50%; 
+    padding-right: 150px;
+} 
+.right_side {
+    padding-left: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 30%; 
+    margin-bottom: 150px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 40px;
+    padding-left: 20px;
+}
+
+.botao_UI {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    border: 2px solid #111B47; 
+    background-color: #111B47;
+    border-radius: 2px;
+    font-size: 12px; 
+    margin-right: 20px; 
+    padding: 5px 10px; 
+    width: 130px;
+    font-weight: bold;
+}
+
+.botao_MORE {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    width: 130px;
+    font-weight: bold;
+    padding: 5px 10px; 
+    align-items: flex-end;
+    border: 2px solid rgb(2, 2, 2);;
+    font-size: 12px; 
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+}
+*{
+    font-family: "Red Rose", serif;
+}
+.text{
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #6F7CB2;
+}
+h1{
+    color: black;
+}
