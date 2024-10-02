@@ -1,0 +1,69 @@
+.foto_esquerda{
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    padding-left: 200px;
+    gap: 40px;
+    padding-top: 145px;
+    padding-right: 30px;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 24px;
+    text-align: justify;
+    padding: 30px;
+}
+.texto_escrita{
+    color: #333333;
+    width: 487px;
+    position: relative;
+    bottom: 165px;
+
+}
+.texto_titulo{
+    font-size: 64px;
+    color: #333333;
+
+}
+.texto_titulo_escrita{
+    font-size: 64px;
+    position: relative;
+    bottom: 130px;
+    color: 64px;
+}
+.foto_direita{
+    padding-top: 145px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+}
+main{
+    display: flex;
+}
+.texto_fotos{
+    flex-direction: row;
+    padding: 50px;
+    position: relative;
+    bottom: 110px;
+}
+button{
+    width: 212px;
+    height: 70px;
+ background-color: #333333;
+ border: 2px solid #333333;
+ border-radius: 80px;
+ color: white;   
+ position: relative;
+ bottom: 130px;
+ font-size: 22px;
+}
+*{
+    font-family: "Lato", sans-serif;
+
+}
