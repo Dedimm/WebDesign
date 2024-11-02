@@ -5,7 +5,7 @@ function addToExpression(value) {
     document.getElementById('display').innerText = expression.join('');
 }
 
-function calculate() {
+function calcular() {
     const expressionString = expression.join('');
     try {
         const result = eval(expressionString);
@@ -17,7 +17,7 @@ function calculate() {
     }
 }
 
-function clearDisplay() {
+function limpar() {
     expression = [];
     document.getElementById('display').innerText = '';
 }
