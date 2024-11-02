@@ -6,9 +6,7 @@ function gerarEmail(nomeCompleto) {
     const ultimoNome = nomes[nomes.length - 1];
 
     const email = `${primeiroNome.toLowerCase()}.${ultimoNome.toLowerCase()}@facens.br`;
-
-    console.log(`Primeiro nome: ${primeiroNome}`);
-    console.log(`Último nome: ${ultimoNome}`);
+    
     console.log(`Email: ${email}`);
 }
 
