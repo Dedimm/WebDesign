@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <style>
-        body{
+        body {
             display: flex;
             justify-content: center;
         }
-        .calcular{
+        .calcular {
             border: 1px solid black;
             display: flex;
             justify-content: center;
@@ -17,7 +17,7 @@
             border-radius: 10px;
             background-color: snow;
         }
-        .botoes{
+        .botoes {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             display: flex;
             justify-content: center;
@@ -26,8 +26,9 @@
             padding: 9px;
             border-radius: 20px;
             background-color: seashell;
+            cursor: pointer;
         }
-        .telinha{
+        .telinha {
             display: flex;
             background-color: black;
             width: 285px;
@@ -40,37 +41,39 @@
             padding: 5px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        .CALCULADORA{
+        .CALCULADORA {
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
 </head>
 <body>
 <div class="CALCULADORA">
-
-    <div class="telinha">7</div>
+    <div class="telinha" id="display"></div>
     <div class="calcular">
-        <button class="botoes">1</button>
-        <button class="botoes">2</button>
-        <button class="botoes">3</button>
-        <button class="botoes">+</button>
-        <button class="botoes">4</button>
-        <button class="botoes">5</button>
-        <button class="botoes">6</button>
-        <button class="botoes">-</button>
-        <button class="botoes">7</button>
-        <button class="botoes">8</button>
-        <button class="botoes">9</button>
-        <button class="botoes">*</button>
-        <button class="botoes"></button>
-        <button class="botoes">0</button>
-        <button class="botoes">=</button>
-        <button class="botoes">\</button>
+        <button class="botoes" onclick="addToExpression('1')">1</button>
+        <button class="botoes" onclick="addToExpression('2')">2</button>
+        <button class="botoes" onclick="addToExpression('3')">3</button>
+        <button class="botoes" onclick="addToExpression('+')">+</button>
+        <button class="botoes" onclick="addToExpression('4')">4</button>
+        <button class="botoes" onclick="addToExpression('5')">5</button>
+        <button class="botoes" onclick="addToExpression('6')">6</button>
+        <button class="botoes" onclick="addToExpression('-')">-</button>
+        <button class="botoes" onclick="addToExpression('7')">7</button>
+        <button class="botoes" onclick="addToExpression('8')">8</button>
+        <button class="botoes" onclick="addToExpression('9')">9</button>
+        <button class="botoes" onclick="addToExpression('*')">*</button>
+        <button class="botoes" onclick="clearDisplay()">C</button> 
+        <button class="botoes" onclick="addToExpression('0')">0</button>
+        <button class="botoes" onclick="calculate()">=</button>
+        <button class="botoes" onclick="addToExpression('/')">/</button>
     </div> 
 </div>
+
+<script src="script.js"></script>
 </body>
 </html>
