@@ -13,11 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     botaoCriar.addEventListener('click', () => {
         const tituloCard = nomeInput.value;  
 
-        if (tituloCard.trim() === "") {
-            alert("Por favor, insira um título para o card.");
-            return;  
-        }
-
         const card = document.createElement('div');
         card.classList.add('card');
         card.style.width = '18rem';  
